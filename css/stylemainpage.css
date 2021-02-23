@@ -1885,6 +1885,10 @@ label, a{
 
 @media screen and (max-width: 375px) {
 
+    #slider {
+        height: 900px;
+    }
+
     #active {
         right: 35%;
     }
