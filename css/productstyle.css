@@ -314,6 +314,7 @@ nav i {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+    cursor: default;
 }
 
 .discount {
