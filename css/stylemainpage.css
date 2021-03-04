@@ -868,6 +868,7 @@ cursor: default;
 	height: 42px;
     width: 42px;
     border-radius: 55px;
+    z-index: 10;
 }
 
 label, a{ 
