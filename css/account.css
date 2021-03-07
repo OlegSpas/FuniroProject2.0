@@ -286,6 +286,7 @@ nav i {
     overflow: hidden;
     border-radius: 55px;
     height: 450px;
+    width: 450px;
 }
 .main-ava__acc img{
     height: 450px;
@@ -330,9 +331,40 @@ nav i {
 
 
 .edit__ava{
+    position: relative;
+    display: inline-block;
+    bottom: 25em;
+    left: 9%;
+}
+
+
+
+.pull-tab {
+    height: 0px;
+    width: 0px;
+    /* border-top: 25px solid #E89F71;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; */
+    -webkit-transform: rotate(-45deg);
     position: absolute;
-    top: 3em;
-    left: 10%;
+    bottom: 0px;
+    right: -15px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.edit__ava:after {
+    content:"⬌";
+    font-size: 40px;
+    font-weight: 600;
+    color: #E89F71;
+    -webkit-transform: rotate(45deg);
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    right: -10px;
+    bottom: -8px;
+    pointer-events: none;
 }
 
 .edit__ava textarea{
@@ -347,6 +379,8 @@ nav i {
     border: 3px solid #E89F71;
     cursor:default;
     box-shadow: 100px 100px 0px 500px #e8e8e8d0;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -877,6 +911,7 @@ nav i {
 }
 
 
+
 @media screen and (max-width: 1200px) {
 
     .top__acc{
@@ -923,6 +958,10 @@ nav i {
     .main-ava__acc,
     .main-ava__acc img{
         height: 400px;
+        width: 400px;
+    }
+    .edit__ava{
+        bottom: 22.5em;
     }
 
     .main__about_acc{
@@ -1049,7 +1088,7 @@ nav i {
 
     .menu-open{
         z-index: 6;
-        top: 6%;
+        top: 7%;
     }
 
     .main__about_acc {
@@ -1059,9 +1098,14 @@ nav i {
         width: 65%;
     }
 
+    .edit__ava{
+        bottom: 20em;
+    }
+
     .main-ava__acc, 
     .main-ava__acc img {
         height: 350px;
+        width: 350px;
     }
 
     .btn-ava{
@@ -1122,7 +1166,7 @@ nav i {
         width: 270px;
     }
     .edit__ava {
-        top: 1em;
+        bottom: 15.5em;
         left: 5%;
     }
     .edit__ava textarea{
