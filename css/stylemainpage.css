@@ -652,9 +652,12 @@ cursor: default;
 }
 
 .hidden_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     z-index: 8;
-    padding: 60% 19%;
+    padding: 60% 0%;
     top: 0%;
     height: 113%;
     width: 100%;
@@ -683,6 +686,7 @@ cursor: default;
 .main_second_btn {
     margin-top: 10%;
     display: flex;
+    justify-content: space-around;
 }
 .main_second_btn i {
     padding-right: 5px;
@@ -698,6 +702,8 @@ cursor: default;
     text-align: left;
     margin-right: 1%;
     margin-left: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .btn_add a:hover{
@@ -868,6 +874,7 @@ cursor: default;
 	height: 42px;
     width: 42px;
     border-radius: 55px;
+    z-index: 10;
 }
 
 label, a{ 
@@ -1531,7 +1538,7 @@ label, a{
     .about_room-content {
         width: 70%;
         height: 22%;
-        left: -43%;
+        left: -35%;
     }
 
     #room-active{
@@ -1699,13 +1706,19 @@ label, a{
 
 
     .list2 {
-        margin-top: 10%;
+        margin-top: 7.5%;
     }
 
     .card-product {
         width: 70%;
-        margin-bottom: 40%;
+        margin-bottom: 45%;
     }
+
+    .card-img,
+    .card-img img{
+        height: 350px;
+    }
+
 
 .rooms-slider{
     height: 500px;
@@ -1734,6 +1747,7 @@ label, a{
 
     #room-active {
         right: 25%;
+        bottom: -170px;
     }
 
     .rooms-content {
@@ -1786,7 +1800,13 @@ label, a{
     }
 
     .hidden_card {
-        height: 130%;
+        height: 125%;
+        padding: 40% 0;
+    }
+
+    .dodatok_card{
+    padding-top: 3.5%;
+    padding-left: 1.5%;
     }
 
     .price-card {
@@ -1795,8 +1815,17 @@ label, a{
         align-items: center;
         justify-content: center;
     }
+
     .card-product {
         margin-bottom: 90%;
+    }
+
+    #room-active {
+        bottom: -120px;
+    }
+
+    .about_room-content{
+        height: 30%;
     }
 
     #funiro {
@@ -1879,7 +1908,7 @@ label, a{
     }
 
     .card-text {
-        height: 30%;
+        height: 40%;
     }
     .tr_card {
         width: 90%;
@@ -1906,6 +1935,15 @@ label, a{
 
     .card-product {
         margin-bottom: 40%;
+    }
+    .hidden_card {
+        height: 125%;
+        padding: 60% 0%;
+    }
+
+    .dodatok_card{
+        padding-top: 4.5%;
+        padding-left: 2%;
     }
 
 
@@ -1955,5 +1993,17 @@ label, a{
 
     .rectangle {
         margin-top: 30%;
+    }
+
+    .room-image article img {
+        height: 350px;
+    }
+
+    .about_room-content{
+    height: 35%;
+    left: -45%;
+    }
+    #room-active {
+        bottom: -100px;
     }
 }
