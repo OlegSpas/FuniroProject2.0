@@ -64,39 +64,9 @@ h2{
     color: #3a3a3a;
     }
 
-/* h2  {
-font-family: 'Gilroy Medium';
-font-size: 42px;
-font-style: normal;
-font-weight: 500;
-line-height: 46px;
-letter-spacing: .03em;
-text-align: left;
-} */
-
-/* h3 {
-    font-family: 'Gilroy Medium';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #898989;
-
-}
-
-h5{
-font-family: 'Gilroy SemiBold';
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-
-} */
-
+    .set__lang{
+        color: #e89f71;
+    }
 /* Section "Header" */
 
 .navigation {
@@ -166,7 +136,7 @@ nav a {
     z-index: 4;
     left: 50%;
     top: 100%;
-    width: 100px;
+    width: 120px;
     padding: 15px 0 15px;
     margin-top: 5px;
     background: white;
@@ -947,7 +917,7 @@ nav i {
         display: flex;
         position: absolute;
         right: 5%;
-        top: 10%;
+        top: 7%;
         z-index: 6;
     }
     

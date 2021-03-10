@@ -129,6 +129,10 @@ button {
 
 }
 
+.set__lang{
+    color: #e89f71;
+}
+
 
 nav {
     text-align: center;
@@ -180,7 +184,7 @@ nav a {
     z-index: 4;
     left: 50%;
     top: 100%;
-    width: 100px;
+    width: 120px;
     padding: 15px 0 15px;
     margin-top: 5px;
     background: white;
@@ -1790,6 +1794,10 @@ label, a{
     .feature-group {
         width: 70%;
         margin-bottom: 5%;
+    }
+
+    .feature-group i{
+        width: 15%;
     }
 
     .feature-list {

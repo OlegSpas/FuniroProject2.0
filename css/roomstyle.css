@@ -111,6 +111,10 @@ button:active{
     outline: none;
 }
 
+.set__lang{
+    color: #e89f71;
+}
+
 
 
 
@@ -176,8 +180,8 @@ nav a {
     position: absolute;
     z-index: 4;
     left: 50%;
-    top: 100%;
-    width: 100px;
+    top: 120%;
+    width: 120px;
     padding: 15px 0 15px;
     margin-top: 5px;
     background: white;
@@ -340,6 +344,7 @@ nav i {
     background-color: #e89f71;
     padding: 20px 60px;
     transition: all .25s ease-in;
+    border: 1px solid #e89f71;
 }
 
 .main-buy-product a:hover{
@@ -1008,6 +1013,10 @@ color: #3a3a3a;
         width: 55%;
     }
 
+    .main-product__content{
+        margin-top: 30%;
+    }
+
     
     .information-content{
         display: flex;
@@ -1162,8 +1171,9 @@ color: #3a3a3a;
     }
 
     .main-buy-product a{
-        padding: 15px 50px;
+        padding: 15px 20px;
     }
+
 
     .about-product-text {
         margin-top: 40%;
