@@ -412,7 +412,7 @@ nav i {
 .deliver-content {
     display: flex;
     justify-content: space-evenly;
-    height: 60vh;
+    padding: 7% 0;
 }
 
 .deliver-title h2 {
@@ -939,7 +939,7 @@ nav i {
         display: flex;
         position: absolute;
         right: 5%;
-        top: 10%;
+        top: 5em;
     }
 
     .search {
@@ -1135,7 +1135,6 @@ nav i {
 
     .deliver-content {
         flex-direction: column;
-        height: 90vh;
     }
 
     .deliver-clubs {
@@ -1143,7 +1142,7 @@ nav i {
     }
 
     .deliver-list {
-        width: 100%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
