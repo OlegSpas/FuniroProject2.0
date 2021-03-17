@@ -1154,6 +1154,11 @@ color: #3a3a3a;
         text-align: center;
         margin-bottom: 1%;
     }
+    .main-content_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -1251,7 +1256,7 @@ color: #3a3a3a;
     }
 
     .menu-footer{
-        width: 90%;
+        width: 80%;
     }
     .about_footer{
         width: 90%;
