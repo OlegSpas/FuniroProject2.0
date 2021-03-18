@@ -1701,9 +1701,9 @@ margin-top: 20%;
     height: 900px;
     max-height: 800px;
     z-index: 9;
-    position: relative;
+    position: absolute;
     display: block;
-    top: -5em;
+    top: 0em;
 }
 /* Section "Footer" */
 
@@ -1819,6 +1819,10 @@ margin-top: 20%;
 
 @media screen and (max-width: 1199px) {
 
+    .search {
+        width: 35%;
+    }
+
      .share_photo img {
         transform: scale(.8, .8);
     }
@@ -1926,6 +1930,25 @@ margin-top: 20%;
         max-width: 940px;
     }
     
+    /* .search input {
+        width: 80%;
+    } */
+
+    .topmenu {
+        display: none;
+    }
+
+    .menu-open {
+        display: flex;
+        position: absolute;
+        right: 5%;
+        top: 5em;
+    }
+
+    .search {
+        width: 40%;
+    }
+
 
     #switch1:checked ~ #controls label:nth-child(3), #switch2:checked ~ #controls label:nth-child(1), #switch3:checked ~ #controls label:nth-child(2){
         right: 15%;
@@ -1939,10 +1962,7 @@ margin-top: 20%;
         bottom: 5%;
         height: 600px;
     }
-    .search input {
-        width: 80%;
-    }
-
+    
     .indv-card__list{
         display: flex;
     }
@@ -2068,10 +2088,6 @@ margin-top: 20%;
         width: 95%;
     }
 
-    .visible__background{
-        height: 0;
-        display: none;
-    }
 
 
     
@@ -2096,6 +2112,12 @@ margin-top: 20%;
 
     .hid_photo{
         max-width: 300px;
+    }
+
+    .visible__background{
+        height: 1100px;
+        max-height: 1100px;
+        top: 7em;
     }
 
     
@@ -2132,14 +2154,29 @@ margin-top: 20%;
     }
 
 
+    .info__five{
+        top: 25em;
+    }
 
+
+    .info__seven{
+        top: 25em;
+    }
+
+    .info__eight{
+        top: 25em;
+    }
+
+    .info__nine{
+        top: 25em;
+    }
 
 
 }
 
 @media screen and (max-width: 767px) {
 
-    .topmenu {
+    /* .topmenu {
 		display: none;
 	}
 	.menu-open {
@@ -2147,6 +2184,14 @@ margin-top: 20%;
         position: absolute;
         right: 5%;
         top: 10%;
+    } */
+
+    .search {
+        width: 45%;
+    }
+
+    .search input {
+        width: 80%;
     }
 
 
@@ -2336,6 +2381,17 @@ margin-top: 20%;
 
 @media screen and (max-width: 575px) {
 
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .search {
+        width: 65%;
+        position: absolute;
+        top: 3em;
+        left: 5%;
+    }
+
     #switch1:checked ~ #controls label:nth-child(3), #switch2:checked ~ #controls label:nth-child(1), #switch3:checked ~ #controls label:nth-child(2){
         right: 25%;
         border-radius: 100px;
@@ -2429,6 +2485,7 @@ margin-top: 20%;
 
     .info__photo{
         width: 230px;
+        height: 350px;
     }
     
     .info__photo img{
@@ -2445,6 +2502,13 @@ margin-top: 20%;
     .title-photo h4{
         text-align: center;
     }
+
+    .visible__background{
+        height: 2600px;
+        max-height: 2600px;
+        top: 7em;
+    }
+
 
 
 
@@ -2466,7 +2530,7 @@ margin-top: 20%;
         }
     
         100%{
-            bottom: 13%;
+            bottom: 0%;
             opacity: .8;
         }
     }
@@ -2493,6 +2557,39 @@ margin-top: 20%;
 
     .card-product {
         margin-bottom: 30%;
+    }
+
+    
+    .info__two{
+        top: 15em;
+    }
+
+    .info__three{
+        top: 30em;
+    }
+    
+    .info__four{
+        top: 45em;
+    }
+
+    .info__five{
+        top: 105em;
+    }
+
+    .info__six{
+        top: 75em;
+    }
+
+    .info__seven{
+        top: 120em;
+    }
+
+    .info__eight{
+        top: 60em;
+    }
+
+    .info__nine{
+        top: 90em;
     }
 
     .price-card {
@@ -2529,7 +2626,7 @@ margin-top: 20%;
     }
 
     .main-slider {
-        height: 950px;
+        height: 1000px;
     }
 
     #active {
@@ -2559,6 +2656,14 @@ margin-top: 20%;
         height: 400px;
     }
 
+    .header-content a {
+        padding: 7% 25%;
+    }
+    
+    .feature-group i{
+        width: 30%;
+    }
+
 
     .top-price-content i {
         margin-left: 15%;
@@ -2571,18 +2676,18 @@ margin-top: 20%;
     }
 
     #switch1:checked ~ #controls label:nth-child(3), #switch2:checked ~ #controls label:nth-child(1), #switch3:checked ~ #controls label:nth-child(2){
-        bottom: 42%;
+        top: 110%;
         z-index: 6;
+        right: 25%;
     }
 
     #switch1:checked ~ #controls label:nth-child(2), #switch2:checked ~ #controls label:nth-child(3), #switch3:checked ~ #controls label:nth-child(1){
-        bottom: 42%;
+        top: 110%;
         z-index: 6;
-        right: 9%;
     }
 
     #active{
-        bottom:50%;
+        bottom:-10%;
         z-index: 6;
     }
 
