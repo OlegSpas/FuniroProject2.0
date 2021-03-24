@@ -213,66 +213,64 @@ nav a {
     border-radius: 10px;
 }
 
-.menu-open {
-	background: none;
-    border: none;
-    margin-left: 20px;
+.close-button{
     display: none;
-    transition: all .06s ease-in;
+    height: 25px;
+    width: 25px;
 }
 
-#header .show-menu {
-    display: block;
-    z-index: 7;
-	position: absolute;
-    background: #e8e8e8cc;
-    width: 160px;
-    top: 0;
-    right: 11%;
-    padding: 50px 0px;
+.gamb__instruments{
+    display: none;
 }
 
-#header .show-menu li {
-	margin-bottom: 5px;
+nav i {
+    padding-left: 5px;
+}
+.topmenu .hid__account{
+    display: none; 
 }
 
 
+.search {
+    background-color: #ffffff;
+    width: 30%;
+    padding-left: 1.5%;
+}
 
+.search i {
+    padding-right: 3%;
+    color: #000000;
+}
 
-.menu-open__online{
-    border: 1px solid #3A3A3A;
+.search input {
+    height: 40px;
+    font-family: 'Gilroy Regular';
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 0px;
+    width: 90%;
+    outline: none;
+}
+
+.main_icons img {
+    height: 30px;
     border-radius: 50%;
-    top: 4em;
-}
-.part__menu{
-    left: 7px;
-    top: 17px;
-    width: 35px;
-    height: 4px;
-    background-color: #3a3a3a;
-    margin-bottom: 5px;
-    transition: all .2s ease-in;
 }
 
-.first__online{
-    transition: all .2s ease-in;
-    transform: rotate(45deg);
-    width: 25px;
-    position: absolute;
+
+.main_icons {
+    display: flex;
+    align-items: center;
 }
 
-.two__online{
-    display: none;
-    position: absolute;
-    transition: all .2s ease-in;
+.main_icons .fas {
+    margin: 5px 10px 0 10px;
+    font-size: 20px;
+    color: #222;
 }
 
-.three__online{
-    transition: all .2s ease-in;
-    width: 25px;
-    transform: rotate(-50deg);
-    position: absolute;
-}
 
 
 nav i {
@@ -1019,19 +1017,239 @@ color: #3a3a3a;
 }
 
 @media screen and (max-width: 991px){
-    .topmenu {
+    nav{
+        display: none;
+    } 
+
+
+    .topmenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .submenu{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 230px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submenu a{
+        font-size: 20px;
+        color: #616161;
+        padding: 10px 20px;
+    }
+
+    nav ul li{
+        margin: 8px 0px;
+    }
+
+    .hid_laptop__icons{
         display: none;
     }
 
-    .menu-open{
+
+    .topmenu>.hid__account>a{
+        padding: 0;
+    } 
+
+    .hid__account img {
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    
+    .hid__account {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hid__account .fas {
+        margin: 0 10px 0 0px;
+        font-size: 22px;
+        color: #e8e8e8;
+    }
+
+    .topmenu .hid__account{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+
+    .gamb__instruments{
+        display: block;
+        position: relative;
+        right: 0%;
+        z-index: 10;
+    }
+
+    .close-button{
+        display: block;
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+    }
+    .gamb__instruments img{
         height: 40px;
         width: 40px;
-        right: 5%;
-        top: 5em;
+        cursor: pointer;
     }
+
+
+    .show-menu{
+        top: 0;
+        position: absolute;
+        background: #3a3a3a;
+        padding: 2em;
+        width: 100%;
+        height: 100%;
+        display: none;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        z-index: 11;
+    }
+
+    nav a  {
+        color: #e8e8e8;
+    }
+
+    .topmenu>li>a{
+        font-size: 26px;
+       
+    }
+
+    .topmenu>li{
+        margin-bottom: 20px;
+    }
+    
+      
+      nav ul {
+        list-style-type: none;
+        margin: 20% auto 0 auto;
+        padding: 0;
+        display: grid;
+            grid-template-columns: repeat(4, auto);
+        width: 80%;
+      }
+      
+    
+      
+      
+      nav ul li {
+        opacity: 0;
+      }
+
+      /* animation */
+    
+    
+       .show-menu {
+        display: block;
+        -webkit-animation: slide-menu 1s ease-in forwards;
+                animation: slide-menu 1s ease-in forwards;
+      }
+      
+      .show-menu .close-button {
+        -webkit-animation: show-x 1s 1s forwards;
+                animation: show-x 1s 1s forwards;
+      }
+      
+      .show-menu li:nth-of-type(1) {
+        -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+                animation: menu-item-anim .6s forwards 1s ease-in-out;
+      }
+      
+      .show-menu li:nth-of-type(2) {
+        -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+                animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+      }
+      
+      .show-menu li:nth-of-type(3) {
+        -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+                animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+      }
+
+      .show-menu li:nth-of-type(4) {
+        -webkit-animation: menu-item-anim .6s forwards 2s ease-in-out;
+                animation: menu-item-anim .6s forwards 2s ease-in-out;
+      }
+      
+      
+      @-webkit-keyframes slide-menu {
+        from {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+        }
+        to {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+        }
+      }
+      
+      @keyframes slide-menu {
+        from {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+        }
+        to {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+        }
+      }
+      
+      @-webkit-keyframes show-x {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes show-x {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @-webkit-keyframes menu-item-anim {
+        from {
+          -webkit-transform: translateY(70%);
+                  transform: translateY(70%);
+          opacity: 0;
+        }
+        to {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes menu-item-anim {
+        from {
+          -webkit-transform: translateY(70%);
+                  transform: translateY(70%);
+          opacity: 0;
+        }
+        to {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }  
+
 
     .search{
         width: 40%;
@@ -1108,14 +1326,16 @@ color: #3a3a3a;
 }
 
 @media screen and (max-width: 767px) {
-    #header .show-menu{
-        right: 15%
-    }
-    .search{
+    .search {
         width: 45%;
     }
-    .search input{
+
+    .search input {
         width: 80%;
+    }
+
+    .topmenu{
+        width: 100%;
     }
     .top-about-product{
         flex-direction: column;
@@ -1208,14 +1428,37 @@ color: #3a3a3a;
 }
 
 @media screen and (max-width: 575px){
-    #header .show-menu{
-        right: 19%
+    
+    .navigation {
+        justify-content: space-between;
+        padding: 5px 30px;
     }
-    .navigation{
-        justify-content: space-around;
+
+    .show-menu{
+        right: 0;
+    }
+
+    .topmenu{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .submenu{
+        width: 200px;
+        transition: all .5s ease;
+        transition-delay: .15s;
+    }
+
+    .topmenu>li:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, 0);
+        position: relative;
+        transition: all .5s ease;
+        transition-delay: .15s;
     }
     .search {
-        width: 65%;
+        width: 90%;
         position: absolute;
         top: 3em;
         left: 5%;

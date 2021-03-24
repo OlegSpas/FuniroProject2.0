@@ -2700,6 +2700,34 @@ margin-top: 20%;
         min-height: 2400px;
     }
 
+    .comments_photo{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90%;
+    }
+
+    .main__info{
+        height: 53%;
+    }
+
+    .top-info__photo{
+        height: 750px;
+    }
+
+    .send__comment{
+        margin-bottom: 5%;
+    }
+
+    .send__comment textarea{
+        margin-bottom: 0;
+    }
+
+    .title-photo{
+        margin-bottom: 5%;
+    }
+
+
+
     .up-photos, .down-photos{
         flex-direction: column;
         align-items: center;
@@ -2718,12 +2746,12 @@ margin-top: 20%;
 
     .info__photo{
         width: 230px;
-        height: 350px;
+        height: 270px;
     }
     
     .info__photo img{
     width: 230px;
-    height: 350px;
+    height: 270px;
     }
 
     .set__soc img{
@@ -2782,6 +2810,7 @@ margin-top: 20%;
     
     .send__comment textarea{
         width: 230px;
+        margin-bottom: 5%;
     }
 
     .send__comment a{
