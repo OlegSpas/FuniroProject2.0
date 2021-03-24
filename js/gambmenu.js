@@ -1,18 +1,30 @@
 
 
-const GamburgerMenu = document.querySelector('.menu-open');
-const FirstPart = document.querySelector('.first__part');
-const TwoPart = document.querySelector('.two__part');
-const ThreePart = document.querySelector('.three__part');
-const OnlineMenu = document.querySelector('.topmenu');
 
 
 
-GamburgerMenu.addEventListener('click', function(){
-	OnlineMenu.classList.toggle('show-menu');
-	GamburgerMenu.classList.toggle("menu-open__online")
-	FirstPart.classList.toggle('first__online');
-	TwoPart.classList.toggle('two__online');
-	ThreePart.classList.toggle('three__online');
+
+
+const overlay = document.querySelector('#overlay');
+const closeMenu = document.querySelector("#close-menu");
+const openMenu = document.querySelector('#open-menu');
+const navigation = document.querySelector('.navigation')
+
+
+openMenu.addEventListener('click', function(){
+    overlay.classList.add('show-menu');
+
 })
 
+closeMenu.addEventListener('click', function(){
+    overlay.classList.remove('show-menu');
+})
+
+
+
+//const  downlink = document.querySelector('.product__down');
+//const  submenu = document.querySelector('.product__submenu');
+
+//downlink.addEventListener('click', function(){
+//    submenu.classList.toggle('online__submenu');
+//})
