@@ -1665,7 +1665,20 @@ margin-top: 20%;
 
 .OnlineScreen{
     display: flex;
+    animation: fluentlyscreen 0.4s forwards ;
 }
+
+@keyframes fluentlyscreen {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+} 
 
 .OfflineScreen{
     display: none; 
@@ -2768,6 +2781,12 @@ margin-top: 20%;
         height: 2600px;
         max-height: 2600px;
         top: 7em;
+    }
+
+    .hid_photo{
+        padding: 22px 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
 
